@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>MJM Education</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Compiled plugins  -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- css -->      
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="jumbotron">
+			<h2>Education & Projects</h2>
+			<p> <a href="index.html">home</a> &middot; <a href="work.html">work experience</a></p>
+		</div>
+		
+
+		<div class="project text-center" id="ucsd" style="padding: 20px margin: 10px">
+			<div class="thumbnail">
+				<a href="#" class="button">
+					<img src="images/Lightroom export/vandy2.jpg" style="width: 300px; height: 400px" alt="fireworks image" class="img">
+					<p><b>University of California, San Diego<br>Web Development</b></p>
+				</a>
+				<div class="details" id="1">
+					<p><b>BREAKTIME Mobile Web Application</b> - <a href="https://t1-breaktime.herokuapp.com">t1-breaktime.herokuapp.com</a><br><em>Introduction to HCI Design</em>, Winter 2015</p>
+					<p>With a team of two other students, we developed a mobile web application over the course of eight weeks.  We developed the app using HTML, Javascript, jQuery and AJAX, then implemented database functionality using Node.js and MongoDB. We styled the app using CSS, Bootstrap, and custom graphics using Adobe Photoshop. Throughout development, we gathered user feedback and ran A/B testing using Woopra to fine-tune app design and functionality.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project text-center" id="vandy" style="padding: 20px margin: 10px">
+			<div class="thumbnail">
+				<a href="#" class="button">
+					<img src="images/Lightroom export/vandy1.jpg" style="width: 300px; height: 400px" alt="fireworks image" class="img">
+					<p><b>Vanderbilt University</b></p>
+				</a>
+				<div class="details" id="2">
+					<p><b>Vanderbilt University</b><br><em>B.A. in Mathematics</em> - May 2013</p>
+					<p>From 2009-2013 I attended Vanderbilt University in Nashville, Tennessee.  The focus of my studies was Mathematics, specifically Applied Statistics, although I received a well rounded education and had the benefit of extraordinary professors in a variety of fields.  The classes I took at Vanderbilt that most directly apply to my current studies in computer science are Applied Statistics, Probability & Statistics, Mathematical Modeling in Economics, Numerical Analysis, Linear Algebra, Actuarial Mathematics, Single & Multivariable Calculus, and Neuroscience.
+					</p>
+				</div>
+			</div>
+		</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/projects.js"></script>
+<script type = "text/javascript">
+		            $(document).ready(function() {
+						initializePage();
+					})
+		
+					function initializePage() {
+						$("div.details").hide('slow');
+						$("a.button").click(projectClick);
+					}
+
+					function projectClick(e) {
+						console.log("Project clicked");
+						e.preventDefault();
+						$(this).parent().children("div.details").toggle();
+					}
+					
+					
+</script>
+
+</body>
+</html>

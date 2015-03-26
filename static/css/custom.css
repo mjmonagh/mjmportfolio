@@ -1,0 +1,53 @@
+
+.example-class-selector {
+	margin-top: 2em;
+}
+
+.example-class-selector p {
+		
+	color: #CC00AA;
+}
+
+body {
+     border: 1px dotted gray;
+     padding: 20px;
+     background-color: ivory;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     /*background: url("http://lorempixel.com/1140/283");*/
+     background: url("../images/fernsbanner.jpg");
+     background-position: 0% 25%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+.project a {
+     text-align: center;
+}
+
+.project .details {
+     overflow: hidden;
+}
+
+.thumbnail {
+     padding-top: 10px;
+}
+
+
+
+
+
